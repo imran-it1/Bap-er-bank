@@ -6,14 +6,16 @@ document.getElementById('btn-submit').addEventListener('click', function(){
     // Step 3 --> Get the password field & Value
     const passField = document.getElementById('input-password');
     const password = passField.value;
-    
-
 
     // Condition Part
     if(email === 'imran@gmail.com' && password === 'secret'){
-        alert('Valid User')
+        window.location.href = 'http://127.0.0.1:5500/bank.html'
     }
     else{
-        alert('Invalid User')
+        console.log('Invalid User')
     }
+
+    // ---> Clear the input filed
+    emailField.value = '';
+    passField.value = '';
 })
