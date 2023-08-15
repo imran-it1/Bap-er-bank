@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bap Er Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-amber-50 w-full h-screen flex justify-center items-center flex-col"
+  >
+    <header class="mb-12 w-full">
+      <!-- Bap er bank -->
+      <h1 class="text-5xl text-center mt-6 text-violet-400">
+        Welcome to
+        <span class="text-violet-600 font-bold"> Bap Er Bannnnk</span>!!!
+      </h1>
+    </header>
+    <main class="w-full">
+      <section class="bg-blue-300 w-9/12 mx-auto px-10 py-5 rounded-md">
+        <!-- Login -->
+        <h3 class="text-3xl mb-4 font-bold tracking-wider">Please Login</h3>
+        <div class="space-y-3">
+          <!-- Email Input Field -->
+          <input
+            class="block w-4/5 px-2 py-2 rounded-md focus:outline-1 focus:outline-violet-500"
+            type="email"
+            name=""
+            id="input-email"
+            placeholder="Please enter your email"
+          />
+          <!-- Password Input Field -->
+          <input
+            class="block w-4/5 px-2 py-2 rounded-md focus:outline-1 focus:outline-violet-500"
+            type="password"
+            name=""
+            id="input-password"
+            placeholder="Please enter your password"
+          />
+          <!-- Submit Button -->
+          <button
+            id="btn-submit"
+            class="px-8 py-3 bg-violet-700 rounded-lg text-white font-medium hover:bg-violet-600 transition-all ease-in-out duration-500"
+          >
+            Submit
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="./js/login.js"></script>
+  </body>
+</html>
