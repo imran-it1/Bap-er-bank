@@ -34,7 +34,9 @@
         <!-- Withdraw -->
         <div class="bg-fuchsia-600 px-5 py-5 text-white rounded-md">
           <h3 class="text-4xl font-bold">Withdraw</h3>
-          <h1 class="text-3xl font-semibold">$0</h1>
+          <h1 class="text-3xl font-semibold">
+            $<span id="pre-withdraw">0</span>
+          </h1>
         </div>
         <!-- Total -->
         <div class="bg-pink-600 px-5 py-5 text-white rounded-md">
@@ -71,11 +73,13 @@
           <div class="space-y-4">
             <!-- Withdraw Input Filed -->
             <input
+              id="withdraw-field"
               class="block w-11/12 px-2 py-2 rounded-md focus:outline-1 focus:outline-violet-500"
               type="text"
             />
             <!-- Withdraw Button -->
             <button
+              id="withdraw-btn"
               class="px-5 py-2 bg-amber-600 rounded-md text-white font-bold hover:bg-amber-600/90"
             >
               Withdraw
@@ -84,6 +88,7 @@
         </div>
       </section>
     </main>
-    <script src="./js/bank.js"></script>
+    <script src="./js/deposit.js"></script>
+    <script src="./js/withdraw.js"></script>
   </body>
 </html>
